@@ -8,12 +8,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js" integrity="sha512-nnNHpffPSgINrsR8ZAIgFUIMexORL5tPwsfktOTxVYSv+AUAILuFYWES8IHl+hhIhpFGlKvWFiz9ZEusrPcSBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.min.js"></script>
-</head>
-<body>
-    
-    <script src="js/script.js"></script>
-</body>
-</html>
 
     <title>Document</title>
 </head>
@@ -21,8 +15,10 @@
 
 
     <div id="app">
+        <h1>Email generate</h1>
         <ul>
-            <li></li>
+            <li v-for="userEmail in email"
+            v-if="email.length === 10">{{ userEmail }}</li>
         </ul>
     </div>
     
